@@ -33,9 +33,10 @@ Esse projeto foi desenvolvindo com as seguintes tecnologias:
 - Git e Github
 
 # Autores
-
-
-
+- Daniela
+- Erika
+- Perseu
+- Richele
 
 ---
 
