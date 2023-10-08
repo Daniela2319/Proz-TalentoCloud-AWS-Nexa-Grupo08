@@ -29,10 +29,57 @@
     </nav>
   </Header>
   <main>
-    <h1>contato</h1>
+    <section>
+      <h1>Seja Bem Vindo à Rota do Pão</h1>
+      <div class="menu">
+        <ul class="menu-lista">
+          <li class="menu-itens"><a href="/HTML/produtos.html">Pães</a></li>
+          <li class="menu-itens"><a href="/HTML/produtos.html">Salgados</a></li>
+          <li class="menu-itens"><a href="/HTML/produtos.html">Doces</a></li>
+          <li class="menu-itens"><a href="/HTML/produtos.html">Tortas</a></li>
+          <li class="menu-itens"><a href="/HTML/produtos.html">Broas</a></li>
+          <li class="menu-itens"><a href="/HTML/produtos.html">Breakfast</a></li>
+          <li class="menu-itens"><a href="/HTML/produtos.html">Kit Festa</a></li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h3 id="titulo">Fale conosco</h3>
+      <div class="menu-rede">
+        <p class="subtitulo">Responderemos o mais breve possível.</p>
+        <h3 id="titulo">Nossas redes</h3>
+        <img src="/img/logo-instagram.jfif" alt="logo do instagram" width="25px">
+        <img src="/img/logo-facebok.jfif" alt="logo-facebok" width="20px">
+        <img src="/img/YouTube.png" alt="logo-youtube" width="20px">
+      </div>
+    </section>
+    <form>
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome">Nome <b>*</b></label> <br>
+          <input type="text" name="nomePessoa" id="nomePessoa" autocomplete="on" required autofocus>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail <b>*</b></label> <br>
+          <input type="email" name="email" id="email" autocomplete="on" required autofocus>
+        </div>
+        <div class="campo">
+          <label for="assunto">Assunto <b>*</b></label> <br>
+          <input type="text" name="assunto" id="assunto" autocomplete="on" required autofocus>
+        </div>
+      </fieldset>
+      <div class="campo">
+        <br>
+        <label for="comentario">Comentário ou mensagem <b>*</b></label>
+        <textarea name="comentario" id="comentario" style="width: 26em;" rows="6"></textarea>
+      </div>
+      <button class="botao" type="submit">Enviar</button>
+    </form>
   </main>
+  <br>
   <footer>
     <div class="rodape">
+      <img src="/img/whatsapp-icon-logo-8CA4FB831E-seeklogo.com.png" alt="Imagem do logo Whatsapp" width="30px">
       <div class="rodape-item">
         <p> <strong>Enderenço</strong> <br>
           Rua da Padaria s/n - Cloud - Recife/PE</p>

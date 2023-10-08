@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Botão</title>
+  <title>Entrar/Cadastre-se</title>
 </head>
 
 <body>
   <Header>
-    <img class="img-logo" src="/img/img-logo.jfif" alt="logo-essencia caseira">
+    <img class="img-logo" src="/img/img-logo.jfif" alt="logo-Rota Pão">
     <nav id="navbar">
       <ul class="nav-lista">
         <li class="nav-item">
@@ -28,10 +28,54 @@
     </nav>
   </Header>
   <main>
-    <h1>botao</h1>
+    <section>
+      <h1>Seja Bem Vindo à Rota do Pão</h1>
+      <div class="menu">
+        <ul class="menu-lista">
+          <li class="menu-itens"><a href="/HTML/produtos.html">Pães</a></li>
+          <li class="menu-itens"><a href="/HTML/produtos.html">Salgados</a></li>
+          <li class="menu-itens"><a href="/HTML/produtos.html">Doces</a></li>
+          <li class="menu-itens"><a href="/HTML/produtos.html">Tortas</a></li>
+          <li class="menu-itens"><a href="/HTML/produtos.html">Broas</a></li>
+          <li class="menu-itens"><a href="/HTML/produtos.html">Breakfast</a></li>
+          <li class="menu-itens"><a href="/HTML/produtos.html">Kit Festa</a></li>
+        </ul>
+      </div>
+    </section>
+    <h3 id="titulo">Entrar</h3>
+    <form action="Entrar">
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome">Nome do usuário ou e-mail<b>*</b></label> <br>
+          <input type="text" type="email" name="nomeusuario" id="nomeusuario" autocomplete="on" required autofocus>
+        </div>
+        <div class="campo">
+          <label for="senha">Senha<b>*</b></label> <br>
+          <input type="password" name="senha" id="senha" autocomplete="on" required autofocus>
+        </div>
+      </fieldset>
+    </form>
+    <button type="submit">Acessar</button>
+    <br>
+    <h3 id="titulo">Cadastre - se</h3>
+    <form action="cadastro">
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome">Endereço de e-mail<b>*</b></label> <br>
+          <input type="email" name="enderecoemail" id="enderecoemail" autocomplete="on" required autofocus>
+        </div>
+        <div class="campo">
+          <label for="senha">Senha<b>*</b></label> <br>
+          <input type="password" name="senha" id="senha" autocomplete="on" required autofocus>
+        </div>
+      </fieldset>
+    </form>
+    <button type="submit">Cadastre-se</button>
   </main>
+  <br>
   <footer>
     <div class="rodape">
+      <img src="/img/whatsapp-icon-logo-8CA4FB831E-seeklogo.com.png" alt="Imagem do logo Whatsapp" width="30px">
       <div class="rodape-item">
         <p> <strong>Enderenço</strong> <br>
           Rua da Padaria s/n - Cloud - Recife/PE</p>
