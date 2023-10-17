@@ -9,9 +9,12 @@
 
 <body>
   <Header>
-    <img class="img-logo" src="/img/logo_rota_do_pao.png" alt="logo-essencia caseira" width="200">
-    <nav id="navbar">
-      <ul class="nav-lista">
+    <div class="cabecalho">
+      <p class="cabecalho-texto">Receba pães no conforto da sua casa. Assine já o plano de recebimento de pães!</p>
+    </div>
+    <nav class="cabecalho-menu">
+      <img class="img-logo" src="/img/logo retangular (cabeçalho).png" alt="logo-essencia caseira">
+      <ul id="nav-lista">
         <li class="nav-item">
           <a href="/HTML/index.html">Home</a>
         </li>
@@ -23,78 +26,244 @@
         </li>
         <div class="nav-btn">
           <button class="btn-item"><a href="/HTML/botao.html">Entra/Cadastre-se</a></button>
-
         </div>
-      </ul>
+        <img src="/img/cesta de compra.png" alt="cesta de compras">
+        <span><b>R$ 0,00 </b><br> 0 itens</span>
     </nav>
   </Header>
   <main>
-    <section>
-      <h1>Seja Bem Vindo à Rota do Pão</h1>
-      <div class="menu">
-        <ul class="menu-lista">
-          <li class="menu-itens"><a href="/HTML/produtos.html">Pães</a></li>
-          <li class="menu-itens"><a href="/HTML/produtos.html">Salgados</a></li>
-          <li class="menu-itens"><a href="/HTML/produtos.html">Doces</a></li>
-          <li class="menu-itens"><a href="/HTML/produtos.html">Tortas</a></li>
-          <li class="menu-itens"><a href="/HTML/produtos.html">Broas</a></li>
-          <li class="menu-itens"><a href="/HTML/produtos.html">Breakfast</a></li>
-          <li class="menu-itens"><a href="/HTML/produtos.html">Kit Festa</a></li>
-        </ul>
+    <section id="Planos-assinatura">
+      <h1 class="titulo-plano">Planos de Assinaturas</h1>
+      <div class="banner-plano-produto">
+        <div class="plano-01">
+          <p class="quero-pao">Quero pão</p>
+          <p class="semana">5X NA SEMANA</p>
+          <p class="apartir">A partir de</p>
+          <p class="preco">R$ 300,00/mês</p>
+          <button class="conhecer">Conhecer</button>
+        </div>
+        <div class="plano-02">
+          <p class="quero-pao">Quero pão</p>
+          <p class="semana">3X NA SEMANA</p>
+          <p class="apartir">A partir de</p>
+          <p class="preco">R$ 180,00/mês</p>
+          <button class="conhecer">Conhecer</button>
+        </div>
+        <div class="plano-03">
+          <p class="quero-pao">Quero pão</p>
+          <p class="semana">2X NA SEMANA</p>
+          <p class="apartir">A partir de</p>
+          <p class="preco">R$ 120,00/mês</p>
+          <button class="conhecer">Conhecer</button>
+        </div>
+        <div class="plano-04">
+          <p class="quero-pao">Quero pão</p>
+          <p class="semana">1X NA SEMANA</p>
+          <p class="apartir">A partir de</p>
+          <p class="preco">R$ 60,00/mês</p>
+          <button class="conhecer">Conhecer</button>
+        </div>
       </div>
+
     </section>
-    <section>
-      <h1>Produtos</h1>
-      <div class="produto-img">
-        <img src="/img/pao-frances.jpg" alt="Figura pão caseiro" width="100px">
-        <p>Pão Francês</p>
-        <p>R$ 10,00</p>
-        <img src="/img/pao-frances.jpg" alt="Figura pão francês" width="100px">
-        <p>Pão Francês</p>
-        <p>R$ 10,00</p>
-        <img src="/img/pao-frances.jpg" alt="Figura pão francês" width="100px">
-        <p>Pão Francês</p>
-        <p>R$ 10,00</p>
-        <img src="/img/pao-frances.jpg" alt="Figura pão francês" width="100px">
-        <p>Pão Francês</p>
-        <p>R$ 10,00</p>
+    <section id="Pães-Delivery">
+      <h1 class="titulo-pao-delivery">Pães Delivery</h1>
+      <div class="banner-delivery-produto">
+        <div class="delivery-01">
+          <img src="/img/Produto-pães/pão-frances.png" alt="pão-frances" class="img-produto">
+          <p class="produto-pao">Pão Francês</p>
+          <div class="quantidade">
+            <p class="menos-mais">-- 1 +</p>
+            <p class="preco-produto">R$ 0,00</p>
+          </div>
+          <button class="adicionar">Adicionar</button>
+        </div>
+
+        <br>
+        <div class="delivery-02">
+          <img src="/img/Produto-pães/pão-doce (1).png" alt="pão-doce" class="img-produto">
+          <p class="produto-pao">Pão Doce Tradicional</p>
+          <div class="quantidade">
+            <p class="menos-mais">-- 1 +</p>
+            <p class="preco-produto">R$ 0,00</p>
+          </div>
+          <button class="adicionar">Adicionar</button>
+        </div>
+
+        <br>
+        <div class="delivery-03">
+          <img src="/img/Produto-pães/pão-integral.png" alt="pão-integral" class="img-produto">
+          <p class="produto-pao">Pão Integral Tradicional</p>
+          <div class="quantidade">
+            <p class="menos-mais">-- 1 +</p>
+            <p class="preco-produto">R$ 0,00</p>
+          </div>
+          <button class="adicionar">Adicionar</button>
+        </div>
+
+        <br>
+        <div class="delivery-04">
+          <img src="/img/Produto-pães/pão-italiano.png" alt="pão-italiano" class="img-produto">
+          <p class="produto-pao">Pão Italiano</p>
+          <div class="quantidade">
+            <p class="menos-mais">-- 1 +</p>
+            <p class="preco-produto">R$ 0,00</p>
+          </div>
+          <button class="adicionar">Adicionar</button>
+        </div>
 
       </div>
     </section>
-    <section>
-      <div class="produto-img">
-        <img src="/img/pao-frances.jpg" alt="Figura pão caseiro" width="100px">
-        <p>Pão Francês</p>
-        <p>R$ 10,00</p>
-        <img src="/img/pao-frances.jpg" alt="Figura pão francês" width="100px">
-        <p>Pão Francês</p>
-        <p>R$ 10,00</p>
-        <img src="/img/pao-frances.jpg" alt="Figura pão francês" width="100px">
-        <p>Pão Francês</p>
-        <p>R$ 10,00</p>
-        <img src="/img/pao-frances.jpg" alt="Figura pão francês" width="100px">
-        <p>Pão Francês</p>
-        <p>R$ 10,00</p>
-      </div>
+    <br>
+    <section id="Pães-Delivery">
+      <div class="banner-delivery-produto">
+        <div class="delivery-05">
+          <img src="/img/Produto-pães/baguette.png" alt="baguette" class="img-produto">
+          <p class="produto-pao">Baquette Tradicional</p>
+          <div class="quantidade">
+            <p class="menos-mais">-- 1 +</p>
+            <p class="preco-produto">R$ 0,00</p>
+          </div>
+          <button class="adicionar">Adicionar</button>
+        </div>
 
+        <br>
+        <div class="delivery-06">
+          <img src="/img/Produto-pães/pao-australiano.png" alt="pão-australiano" class="img-produto">
+          <p class="produto-pao">Pão Australiano</p>
+          <div class="quantidade">
+            <p class="menos-mais">-- 1 +</p>
+            <p class="preco-produto">R$ 0,00</p>
+          </div>
+          <button class="adicionar">Adicionar</button>
+        </div>
+
+        <br>
+        <div class="delivery-07">
+          <img src="/img/Produto-pães/croasaint 1.png" alt="croissant" class="img-produto">
+          <p class="produto-pao">Croissant</p>
+          <div class="quantidade">
+            <p class="menos-mais">-- 1 +</p>
+            <p class="preco-produto">R$ 0,00</p>
+          </div>
+          <button class="adicionar">Adicionar</button>
+        </div>
+
+        <br>
+        <div class="delivery-08">
+          <img src="/img/Produto-pães/pao-queijo.png" alt="pão-queijo" class="img-produto">
+          <p class="produto-pao">Pão de Queijo</p>
+          <div class="quantidade">
+            <p class="menos-mais">-- 1 +</p>
+            <p class="preco-produto">R$ 0,00</p>
+          </div>
+          <button class="adicionar">Adicionar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="Pães-Delivery">
+      <div class="banner-delivery-produto">
+        <div class="delivery-09">
+          <img src="/img/Produto-pães/brioche.png" alt="brioche" class="img-produto">
+          <p class="produto-pao">Brioche</p>
+          <div class="quantidade">
+            <p class="menos-mais">-- 1 +</p>
+            <p class="preco-produto">R$ 0,00</p>
+          </div>
+          <button class="adicionar">Adicionar</button>
+        </div>
+
+        <br>
+        <div class="delivery-10">
+          <img src="/img/Produto-pães/pão-cacau.png" alt="pão-cacau" class="img-produto">
+          <p class="produto-pao">Pão de Cacau</p>
+          <div class="quantidade">
+            <p class="menos-mais">-- 1 +</p>
+            <p class="preco-produto">R$ 0,00</p>
+          </div>
+          <button class="adicionar">Adicionar</button>
+        </div>
+
+        <br>
+        <div class="delivery-11">
+          <img src="/img/Produto-pães/pao-de-caixa- tradicional 1.png" alt="pao-caixa" class="img-produto">
+          <p class="produto-pao">Pão de Caixa Tradicional</p>
+          <div class="quantidade">
+            <p class="menos-mais">-- 1 +</p>
+            <p class="preco-produto">R$ 0,00</p>
+          </div>
+          <button class="adicionar">Adicionar</button>
+        </div>
+
+        <br>
+        <div class="delivery-12">
+          <img src="/img/Produto-pães/pão de caixa integral 1.png" alt="pão-caixa-integral" class="img-produto">
+          <p class="produto-pao">Pão de Caixa Integral</p>
+          <div class="quantidade">
+            <p class="menos-mais">-- 1 +</p>
+            <p class="preco-produto">R$ 0,00</p>
+          </div>
+          <button class="adicionar">Adicionar</button>
+        </div>
+      </div>
+    </section>
+    <section id="pão-congelados">
+      <div class="congelado-01">
+        <img src="/img/Produto-congelado/congelado pão de queijo 1.png" alt="congelado-queijo" class="img-produto">
+        <p class="produto-pao">Pão de Queijo</p>
+        <div class="quantidade">
+          <p class="menos-mais">-- 1 +</p>
+          <p class="preco-produto">R$ 0,00</p>
+        </div>
+        <button class="adicionar">Adicionar</button>
+      </div>
+      <div class="congelado-02">
+        <img src="/img/Produto-congelado/congelado croassait 1.png" alt="congelado-croissant" class="img-produto">
+        <p class="produto-pao">Croissant</p>
+        <div class="quantidade">
+          <p class="menos-mais">-- 1 +</p>
+          <p class="preco-produto">R$ 0,00</p>
+        </div>
+        <button class="adicionar">Adicionar</button>
+      </div>
+      <div class="congelado-03">
+        <img src="/img/Produto-congelado/congelado francês 1.png" alt="congelado-frances" class="img-produto">
+        <p class="produto-pao">Pão Francês</p>
+        <div class="quantidade">
+          <p class="menos-mais">-- 1 +</p>
+          <p class="preco-produto">R$ 0,00</p>
+        </div>
+        <button class="adicionar">Adicionar</button>
+      </div>
+      <div class="congelado-04">
+        <img src="/img/Produto-congelado/congelado integral 1.png" alt="congelado-integral" class="img-produto">
+        <p class="produto-pao">Pão Integral</p>
+        <div class="quantidade">
+          <p class="menos-mais">-- 1 +</p>
+          <p class="preco-produto">R$ 0,00</p>
+        </div>
+        <button class="adicionar">Adicionar</button>
+      </div>
     </section>
   </main>
+  <br>
   <footer>
     <div class="rodape">
-      <img src="/img/whatsapp-icon-logo-8CA4FB831E-seeklogo.com.png" alt="Imagem do logo Whatsapp" width="30px">
+      <img src="/img/Imagem logo whatsapp (sobre banner 3 e rodapé).png" alt="Imagem do logo Whatsapp"
+        class="img-rodape">
       <div class="rodape-item">
         <p> <strong>Enderenço</strong> <br>
-          Rua da Padaria s/n - Cloud - Recife/PE</p>
+          Rua da Padaria, s/n - Recife Antigo - <br> Recife - PE - CEP: 51180-041</p>
       </div>
       <div class="rodape-item">
         <p> <strong>Contato</strong> <br>
-          E-mail: contato@essenciacaseira.com.br <br>
-          (xx) 99999-9999
-        </p>
+          E-mail: contato@rotadopao.com.br <br>
+          (81) 99874-8913
       </div>
       <div class="rodape-item">
-        <p> <strong>Horário de atendimento</strong> <br>
-          Segunda à Sexta das 08:00 às 20:00h
+        <p> <strong>Horário de atendimento:</strong> <br>
+          Segunda à Sexta das 08:00 às 20:00h <br>
           Sábado e Domingo das 08:00 às 17:00h
         </p>
       </div>
