@@ -4,18 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body,
-button,
-input,
-select,
-textarea {
   font-family: "Roboto", sans-serif;
-}
-
-body {
-  background-color: #f7f7f7;
 }
 
 header .cabecalho {
@@ -33,77 +22,140 @@ header .cabecalho .cabecalho-texto {
   padding: 16px 0 16px 0;
 }
 
+/*Cabeçalho do menu*/
 header .cabecalho-menu {
-  background-color: #fbf2c0;
+  width: 100%;
+  height: 200px;
   display: flex;
-}
-/*parei aqui navbar não tem mais*/
-#navbar {
-  display: flex; /*elemento fica lado a lado*/
   justify-content: space-between;
   align-items: center;
-  height: 30px;
-  padding: 0 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  background-color: #fbf2c0;
 }
 
-.img-logo {
-  width: 304px;
-  height: 135px;
-  border-radius: 50%;
-  padding: 0;
-  margin: 16px;
-}
-
-.nav-lista {
-  list-style: none;
+header #nav-lista {
   display: flex;
   align-items: center;
-  gap: 10rem;
-  margin-bottom: 150px;
-  padding: 24 auto;
+  list-style: none;
+  margin-left: 37px;
+  gap: 47px; /*medida espaço entre lista produto cabeçalho*/
 }
 
-.nav-item a {
+header #nav-lista .nav-item a {
   text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #48392a;
+  word-wrap: break-word;
+}
+
+header .btn-item {
+  width: 280px;
+  height: 36px;
+  background-color: #cc2936;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 63px;
+}
+header .btn-item a {
+  color: #fbf2c0;
+  text-decoration: none;
+}
+
+header .btn-itens {
+  margin-left: 20px;
+}
+
+header .img-cesta {
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+  padding: 10px;
+  gap: 10px;
+}
+
+header .itens {
+  flex-direction: column;
+}
+
+header span {
+  color: #cc2936;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*Plano de assinatura*/
+
+main #Planos-assinatura {
+  background-color: #cc2936;
+  width: 100%;
+  height: 87px;
+  /* margin-bottom: 27px; */
+}
+
+main .titulo-plano {
+  color: #fbf2c0;
+  font-size: 45px;
+  font-weight: 800;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 16px 0 16px 0;
+}
+
+main .banner-plano-produto {
+  display: flex;
+  flex-direction: row;
+  margin: 128px;
+  gap: 28px;
+  /* justify-content: space-around; */
+}
+
+main .plano-01 {
+  width: 278px;
+  height: 278px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px #cc2936 solid;
+  border-radius: 30px;
+  background-color: white;
+  padding: 30px;
+}
+
+main .quero-pao {
+  color: #cc2936;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+main .semana {
+  color: #cc2936;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 57px;
+}
+
+main .apartir {
   color: #48392a;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
-.nav-item a:hover {
-  color: #333;
-  transition: color 0.3s;
-}
-
-.nav-btn {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-left: 200px;
-}
-
-.nav-btn .btn-item a {
-  background-color: #fff;
+main .preco {
+  color: #48392a;
   font-size: 20px;
-  color: #333;
+  font-weight: 800;
+  margin-bottom: 21px;
+}
+
+main .conhecer {
+  width: 143px;
+  height: 48px;
+  background-color: #cc2936;
+  border-radius: 20px;
   border: none;
-  font-weight: 500;
-  padding: 2px;
-  text-decoration: none;
-}
-.btn-item a:hover {
-  background-color: #333;
-  color: #f7f7f7;
-  transition: color 0.2s;
-}
-.nav-btn .btn-itens a {
-  background-color: rgb(127, 62, 62);
   font-size: 20px;
-  color: white;
-  border: none;
-  font-weight: 500;
-  padding: auto;
-  text-decoration: none;
+  font-weight: 400;
+  color: #fbf2c0;
 }
