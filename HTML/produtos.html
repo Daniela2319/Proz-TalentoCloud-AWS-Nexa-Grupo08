@@ -10,13 +10,13 @@
 
 <body>
   <Header>
+    <!-- Cabeçalho-texto -->
     <div class="cabecalho">
       <p class="cabecalho-texto">Receba pães no conforto da sua casa. Assine já o plano de recebimento de pães!</p>
     </div>
+    <!-- Lista-menu -->
     <nav class="cabecalho-menu">
-
       <img class="img-logo" src="/img/logo retangular (cabeçalho).png" alt="logo-essencia caseira">
-
       <ul id="nav-lista">
         <li class="nav-item">
           <a href="/HTML/index.html">Home</a>
@@ -31,10 +31,11 @@
           <a href="/HTML/produtos.html">Produtos</a>
         </li>
       </ul>
-
+      <!-- Botao, cesta com preço e o item -->
       <div class="img-cesta">
         <div class="btn-itens">
-          <button class="btn-item"><a href="/HTML/botao.html">Login/Cadastre-se</a></button>
+          <button class="btn-item"><a href="/HTML/botao.html">
+              Login/Cadastre-se</a></button>
         </div>
         <img src="/img/cesta de compra.png" alt="cesta de compras">
         <div class="itens">
@@ -43,6 +44,7 @@
         </div>
     </nav>
   </Header>
+  <!-- Planos-assinatura -->
   <main>
     <section id="Planos-assinatura">
       <h1 class="titulo-plano">Planos de Assinaturas</h1>
@@ -52,126 +54,164 @@
           <p class="semana">5X NA SEMANA</p>
           <p class="apartir">A partir de</p>
           <p class="preco">R$ 300,00/mês</p>
-          <button class="conhecer">Conhecer</button>
+          <button class="btn-conhecer">Conhecer</button>
         </div>
         <div class="plano-01">
           <p class="quero-pao">Quero pão</p>
           <p class="semana">3X NA SEMANA</p>
           <p class="apartir">A partir de</p>
           <p class="preco">R$ 180,00/mês</p>
-          <button class="conhecer">Conhecer</button>
+          <button class="btn-conhecer">Conhecer</button>
         </div>
         <div class="plano-01">
           <p class="quero-pao">Quero pão</p>
           <p class="semana">2X NA SEMANA</p>
           <p class="apartir">A partir de</p>
           <p class="preco">R$ 120,00/mês</p>
-          <button class="conhecer">Conhecer</button>
+          <button class="btn-conhecer">Conhecer</button>
         </div>
         <div class="plano-01">
           <p class="quero-pao">Quero pão</p>
           <p class="semana">1X NA SEMANA</p>
           <p class="apartir">A partir de</p>
           <p class="preco">R$ 60,00/mês</p>
-          <button class="conhecer">Conhecer</button>
+          <button class="btn-conhecer">Conhecer</button>
         </div>
       </div>
-
-      <!-- </section>
-    <section id="Pães-Delivery">
+      <!-- pães delivery -->
       <h1 class="titulo-pao-delivery">Pães Delivery</h1>
       <div class="banner-delivery-produto">
         <div class="delivery-01">
           <img src="/img/Produto-pães/pão-frances.png" alt="pão-frances" class="img-produto">
           <p class="produto-pao">Pão Francês</p>
           <div class="quantidade">
-            <p class="menos-mais">-- 1 +</p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">
+              <label for="qtd-produto">--</label>
+              <input type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1" max="30" step="1"
+                value="1" required>
+            </p>
+            <p class="qtd-produto">R$ 0,00</p>
           </div>
-          <button class="adicionar">Adicionar</button>
+          <button class="btn-adicionar">Adicionar</button>
         </div>
-
-        <br>
-        <div class="delivery-02">
+        <div class="delivery-01">
           <img src="/img/Produto-pães/pão-doce (1).png" alt="pão-doce" class="img-produto">
           <p class="produto-pao">Pão Doce Tradicional</p>
           <div class="quantidade">
-            <p class="menos-mais">-- 1 +</p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">
+              <label for="qtd-produto">--</label>
+              <input type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1" max="30" step="1"
+                value="1" required>
+            </p>
+            <p class="qtd-produto">R$ 0,00</p>
           </div>
-          <button class="adicionar">Adicionar</button>
+          <button class="btn-adicionar">Adicionar</button>
         </div>
 
         <br>
-        <div class="delivery-03">
+        <div class="delivery-01">
           <img src="/img/Produto-pães/pão-integral.png" alt="pão-integral" class="img-produto">
           <p class="produto-pao">Pão Integral Tradicional</p>
           <div class="quantidade">
-            <p class="menos-mais">-- 1 +</p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">
+              <label for="qtd-produto">--</label>
+              <input type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1" max="30" step="1"
+                value="1" required>
+            </p>
+            <p class="qtd-produto">R$ 0,00</p>
           </div>
-          <button class="adicionar">Adicionar</button>
+          <button class="btn-adicionar">Adicionar</button>
         </div>
 
         <br>
-        <div class="delivery-04">
+        <div class="delivery-01">
           <img src="/img/Produto-pães/pão-italiano.png" alt="pão-italiano" class="img-produto">
           <p class="produto-pao">Pão Italiano</p>
           <div class="quantidade">
-            <p class="menos-mais">-- 1 +</p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">
+              <label for="qtd-produto">--</label>
+              <input type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1" max="30" step="1"
+                value="1" required>
+            </p>
+            <p class="qtd-produto">R$ 0,00</p>
           </div>
-          <button class="adicionar">Adicionar</button>
+          <button class="btn-adicionar">Adicionar</button>
         </div>
+        <!-- vou ter organizar os codigos do html -->
 
-      </div>
-    </section>
-    <br>
-    <section id="Pães-Delivery">
-      <div class="banner-delivery-produto">
-        <div class="delivery-05">
+        <!-- <div class="delivery-01">
           <img src="/img/Produto-pães/baguette.png" alt="baguette" class="img-produto">
           <p class="produto-pao">Baquette Tradicional</p>
           <div class="quantidade">
-            <p class="menos-mais">-- 1 +</p>
+            <p class="qtd-produto">
+              <label for="qtd-produto">--</label>
+              <input type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1" max="30" step="1"
+                value="1" required>
+            </p>
             <p class="preco-produto">R$ 0,00</p>
           </div>
-          <button class="adicionar">Adicionar</button>
+          <button class="btn-adicionar">Adicionar</button>
         </div>
 
         <br>
-        <div class="delivery-06">
+        <div class="delivery-01">
           <img src="/img/Produto-pães/pao-australiano.png" alt="pão-australiano" class="img-produto">
           <p class="produto-pao">Pão Australiano</p>
           <div class="quantidade">
-            <p class="menos-mais">-- 1 +</p>
+            <p class="qtd-produto">
+              <label for="qtd-produto">--</label>
+              <input type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1" max="30" step="1"
+                value="1" required>
+            </p>
             <p class="preco-produto">R$ 0,00</p>
           </div>
-          <button class="adicionar">Adicionar</button>
+          <button class="btn-adicionar">Adicionar</button>
         </div>
 
         <br>
-        <div class="delivery-07">
+        <div class="delivery-01">
           <img src="/img/Produto-pães/croasaint 1.png" alt="croissant" class="img-produto">
           <p class="produto-pao">Croissant</p>
           <div class="quantidade">
-            <p class="menos-mais">-- 1 +</p>
+            <p class="qtd-produto">
+              <label for="qtd-produto">--</label>
+              <input type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1" max="30" step="1"
+                value="1" required>
+            </p>
             <p class="preco-produto">R$ 0,00</p>
           </div>
-          <button class="adicionar">Adicionar</button>
+          <button class="btn-adicionar">Adicionar</button>
         </div>
 
         <br>
-        <div class="delivery-08">
+        <div class="delivery-01">
           <img src="/img/Produto-pães/pao-queijo.png" alt="pão-queijo" class="img-produto">
           <p class="produto-pao">Pão de Queijo</p>
           <div class="quantidade">
-            <p class="menos-mais">-- 1 +</p>
+            <p class="qtd-produto">
+              <label for="qtd-produto">--</label>
+              <input type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1" max="30" step="1"
+                value="1" required>
+            </p>
             <p class="preco-produto">R$ 0,00</p>
           </div>
-          <button class="adicionar">Adicionar</button>
+          <button class="btn-adicionar">Adicionar</button>
         </div>
+      </div> -->
       </div>
+
+
+    </section>
+    <br>
+
+
+
+
+
+    <!-- <br>
+    <section id="Pães-Delivery">
+      <div class="banner-delivery-produto">
+
     </section>
 
     <section id="Pães-Delivery">

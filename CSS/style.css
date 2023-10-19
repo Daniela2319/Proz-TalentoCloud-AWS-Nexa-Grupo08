@@ -36,7 +36,7 @@ header #nav-lista {
   display: flex;
   align-items: center;
   list-style: none;
-  margin-left: 37px;
+  margin-left: 100px;
   gap: 47px; /*medida espaço entre lista produto cabeçalho*/
 }
 
@@ -45,7 +45,10 @@ header #nav-lista .nav-item a {
   font-size: 20px;
   font-weight: 400;
   color: #48392a;
-  word-wrap: break-word;
+}
+
+header .btn-itens {
+  margin-left: 20px;
 }
 
 header .btn-item {
@@ -58,13 +61,10 @@ header .btn-item {
   font-weight: 400;
   margin-left: 63px;
 }
+
 header .btn-item a {
   color: #fbf2c0;
   text-decoration: none;
-}
-
-header .btn-itens {
-  margin-left: 20px;
 }
 
 header .img-cesta {
@@ -91,7 +91,6 @@ main #Planos-assinatura {
   background-color: #cc2936;
   width: 100%;
   height: 87px;
-  /* margin-bottom: 27px; */
 }
 
 main .titulo-plano {
@@ -108,12 +107,11 @@ main .banner-plano-produto {
   flex-direction: row;
   margin: 128px;
   gap: 28px;
-  /* justify-content: space-around; */
 }
 
 main .plano-01 {
-  width: 278px;
-  height: 278px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,7 +147,7 @@ main .preco {
   margin-bottom: 21px;
 }
 
-main .conhecer {
+main .btn-conhecer {
   width: 143px;
   height: 48px;
   background-color: #cc2936;
@@ -158,4 +156,80 @@ main .conhecer {
   font-size: 20px;
   font-weight: 400;
   color: #fbf2c0;
+}
+
+/*Pães Delivery*/
+
+main .titulo-pao-delivery {
+  background-color: #cc2936;
+  width: 100%;
+  height: 87px;
+  color: #fbf2c0;
+  font-size: 45px;
+  font-weight: 800;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 16px 0 16px 0;
+}
+
+main .banner-delivery-produto {
+  display: flex;
+  flex-direction: row;
+  margin: 128px;
+  gap: 28px;
+}
+
+main .delivery-01 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px #cc2936 solid;
+  border-radius: 30px;
+  background-color: white;
+  margin: 15px 15px 18px 15px;
+}
+main .produto-pao {
+  color: #48392a;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin-top: 18px;
+}
+
+main .quantidade {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+main #qtd-produto {
+  font-size: 24px;
+  font-weight: 800;
+  color: #cc2936;
+  border: 1px #cc2936 solid;
+}
+
+main .qtd-produto {
+  font-size: 24px;
+  font-weight: 800;
+  color: #cc2936;
+}
+
+main .btn-adicionar {
+  width: 143px;
+  height: 48px;
+  background-color: #cc2936;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fbf2c0;
+  margin: 15px 0 30px 0;
+}
+
+main .img-produto {
+  width: 100%;
+  padding: 15px 15px 18px 15px;
 }
