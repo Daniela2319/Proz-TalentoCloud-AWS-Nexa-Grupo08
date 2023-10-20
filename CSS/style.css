@@ -87,7 +87,7 @@ header span {
 
 /*Plano de assinatura*/
 
-main #Planos-assinatura {
+main .titulo-plano {
   background-color: #cc2936;
   width: 100%;
   height: 87px;
@@ -172,6 +172,7 @@ main .titulo-pao-delivery {
   padding: 16px 0 16px 0;
 }
 
+/*delivery-banner-produto*/
 main .banner-delivery-produto {
   display: flex;
   flex-direction: row;
@@ -179,7 +180,8 @@ main .banner-delivery-produto {
   gap: 28px;
 }
 
-main .delivery-01 {
+/*delivery-banner-produto */
+main .container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -190,6 +192,7 @@ main .delivery-01 {
   background-color: white;
   margin: 15px 15px 18px 15px;
 }
+
 main .produto-pao {
   color: #48392a;
   font-size: 20px;
@@ -211,12 +214,6 @@ main #qtd-produto {
   border: 1px #cc2936 solid;
 }
 
-main .qtd-produto {
-  font-size: 24px;
-  font-weight: 800;
-  color: #cc2936;
-}
-
 main .btn-adicionar {
   width: 143px;
   height: 48px;
@@ -232,4 +229,34 @@ main .btn-adicionar {
 main .img-produto {
   width: 100%;
   padding: 15px 15px 18px 15px;
+}
+
+/* congelados-banner-produto */
+main .congelado-banner-produto {
+  display: flex;
+  flex-direction: row;
+  margin: 128px;
+  gap: 28px;
+}
+
+/*Rodapé*/
+footer .rodape-01 {
+  width: 100%;
+  height: 258px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #48392a;
+  gap: 74px;
+}
+
+footer .rodape-item {
+  color: #fbf2c0;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px;
+}
+
+footer .img-rodape {
+  margin-bottom: 135px;
 }
