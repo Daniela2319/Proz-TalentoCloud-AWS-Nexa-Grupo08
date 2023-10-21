@@ -5,15 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre</title>
+  <link rel="stylesheet" href="/CSS/style.css">
 
 </head>
 
 <body>
 
   <Header>
+    <!-- Cabeçalho-texto -->
     <div class="cabecalho">
       <p class="cabecalho-texto">Receba pães no conforto da sua casa. Assine já o plano de recebimento de pães!</p>
     </div>
+    <!-- Lista-menu -->
     <nav class="cabecalho-menu">
       <img class="img-logo" src="/img/logo retangular (cabeçalho).png" alt="logo-essencia caseira">
       <ul id="nav-lista">
@@ -21,16 +24,29 @@
           <a href="/HTML/index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a href="/HTML/produtos.html">Produtos</a>
+          <a href="/HTML/sobre.html">Sobre</a>
         </li>
         <li class="nav-item">
           <a href="/HTML/contatos.html">Contatos</a>
         </li>
-        <div class="nav-btn">
-          <button class="btn-item"><a href="/HTML/botao.html">Login/Cadastre-se</a></button>
+        <li class="nav-item">
+          <a href="/HTML/produtos.html">Produtos</a>
+        </li>
+      </ul>
+      <!-- Botao, cesta com preço e o item -->
+      <div class="img-cesta">
+        <div class="btn-itens">
+          <button class="btn-item"><a href="/HTML/botao.html">
+              Login | Cadastre-se</a></button>
         </div>
-        <img src="/img/cesta de compra.png" alt="cesta de compras">
-        <span><b>R$ 0,00 </b><br> 0 itens</span>
+        <div class="itens">
+          <div class="precoEitem">
+            <span><b>R$ 0,00</b> <br /></span>
+            <span>0 itens</span>
+          </div>
+          <img src="/img/cesta de compra.png" alt="cesta de compras">
+        </div>
+      </div>
     </nav>
   </Header>
   <br>
@@ -82,24 +98,37 @@
     </div>
   </main>
   <br>
-  <footer>
-    <div class="rodape">
-      <img src="/img/Imagem logo whatsapp (sobre banner 3 e rodapé).png" alt="Imagem do logo Whatsapp"
-        class="img-rodape">
+  <footer id="rodape">
+    <div class="rodape-01">
       <div class="rodape-item">
-        <p> <strong>Enderenço</strong> <br>
-          Rua da Padaria, s/n - Recife Antigo - <br> Recife - PE - CEP: 51180-041</p>
+        <span><strong>Enderenço:</strong></span>
+        <br>
+        <br>
+        <span>
+          Rua da Padaria, s/n - Recife Antigo - <br> Recife - PE - CEP: 51180-041
+        </span>
       </div>
       <div class="rodape-item">
-        <p> <strong>Contato</strong> <br>
+        <span><strong>Contato:</strong></span>
+        <br>
+        <br>
+        <span>
           E-mail: contato@rotadopao.com.br <br>
           (81) 99874-8913
+        </span>
       </div>
       <div class="rodape-item">
-        <p> <strong>Horário de atendimento:</strong> <br>
+        <span class="rodape-02"><strong>Horário de atendimento:</strong></span>
+        <br>
+        <br>
+        <span>
           Segunda à Sexta das 08:00 às 20:00h <br>
           Sábado e Domingo das 08:00 às 17:00h
-        </p>
+        </span>
+      </div>
+      <div class="img-rodape">
+        <img src="/img/Imagem logo whatsapp (sobre banner 3 e rodapé).png" alt="Imagem do logo Whatsapp"
+          class="img-rodape">
       </div>
     </div>
   </footer>
