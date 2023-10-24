@@ -12,8 +12,14 @@ header {
 
 header .cabecalho {
   background-color: #cc2936;
-  width: 100%;
+  max-width: 100%;
   height: 52px;
+}
+
+@media (max-width: 800px) {
+  .cabecalho {
+    min-width: 200px;
+  }
 }
 
 header .cabecalho .cabecalho-texto {
@@ -23,6 +29,15 @@ header .cabecalho .cabecalho-texto {
   word-wrap: break-word;
   text-align: center;
   padding: 16px 0 16px 0;
+}
+
+@media (max-width: 900px) {
+  header .cabecalho .cabecalho-texto {
+    font-size: 12px;
+  }
+  .img-logo {
+    width: 200px;
+  }
 }
 
 /*Cabeçalho do menu*/
@@ -46,6 +61,16 @@ header #nav-lista {
 @media (max-width: 915px) {
   header #nav-lista {
     display: none;
+  }
+}
+header .menu-hamburguer {
+  display: none;
+}
+
+@media (max-width: 915px) {
+  header .menu-hamburguer {
+    display: block;
+    margin: 16px;
   }
 }
 
@@ -86,6 +111,12 @@ header .img-cesta {
   gap: 10px;
 }
 
+@media (max-width: 900px) {
+  header .img-cesta {
+    display: none;
+  }
+}
+
 header .itens {
   display: flex;
   flex-direction: row-reverse;
@@ -106,6 +137,7 @@ header span {
 
 main .titulo-plano {
   background-color: #cc2936;
+  align-items: center;
   width: 100%;
   height: 87px;
 }
@@ -119,16 +151,30 @@ main .titulo-plano {
   padding: 16px 0 16px 0;
 }
 
+@media (max-width: 900px) {
+  main .titulo-plano {
+    font-size: 20px;
+  }
+}
+
 main .banner-plano-produto {
   display: flex;
   flex-direction: row;
   margin: 128px;
+  padding: 30px;
   gap: 28px;
 }
 
+@media (max-width: 1228px) {
+  main .banner-plano-produto {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
 main .plano-01 {
-  width: 100%;
-  height: 100%;
+  width: 478px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,6 +182,14 @@ main .plano-01 {
   border-radius: 30px;
   background-color: white;
   padding: 30px;
+}
+
+@media (max-width: 1228px) {
+  main .plano-01 {
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
 }
 
 main .quero-pao {
@@ -189,12 +243,26 @@ main .titulo-pao-delivery {
   padding: 16px 0 16px 0;
 }
 
+@media (max-width: 720px) {
+  main .titulo-pao-delivery {
+    font-size: 20px;
+  }
+}
+
 /*delivery-banner-produto*/
 main .banner-delivery-produto {
   display: flex;
   flex-direction: row;
   margin: 128px;
   gap: 28px;
+}
+
+@media (max-width: 1228px) {
+  main .banner-delivery-produto {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 /*delivery-banner-produto */
@@ -208,6 +276,15 @@ main .container {
   border-radius: 30px;
   background-color: white;
   margin: 15px 15px 18px 15px;
+}
+
+@media (max-width: 1228px) {
+  main .container {
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 16px;
+  }
 }
 
 main .produto-pao {
@@ -256,6 +333,14 @@ main .congelado-banner-produto {
   gap: 28px;
 }
 
+@media (max-width: 1228px) {
+  main .congelado-banner-produto {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
 /*Rodapé*/
 footer .rodape-01 {
   width: 100%;
@@ -267,6 +352,15 @@ footer .rodape-01 {
   gap: 74px;
 }
 
+@media (max-width: 1228px) {
+  footer .rodape-01 {
+    display: block;
+    align-items: center;
+    height: auto;
+    /* gap: 1rem; */
+  }
+}
+
 footer .rodape-item {
   color: #fbf2c0;
   font-size: 20px;
@@ -274,6 +368,18 @@ footer .rodape-item {
   padding: 20px;
 }
 
+@media (max-width: 1228px) {
+  footer .rodape-item {
+    font-size: 10px;
+  }
+}
+
 footer .img-rodape {
   margin-bottom: 135px;
+}
+
+@media (max-width: 1228px) {
+  footer .img-rodape {
+    display: none;
+  }
 }
