@@ -31,7 +31,7 @@
           <a href="/HTML/produtos.html">Produtos</a>
         </li>
       </ul>
-      <img class="menu-hamburguer" src="/img/menu-hamburguer.png" alt="menu-hamburguer">
+      <img class="menu-hamburguer" src="/img/Hamburger_icon.svg.png" alt="menu-hamburguer" width="50px">
       <!-- Botao, cesta com preço e o item -->
       <div class="img-cesta">
         <div class="btn-itens">
@@ -48,44 +48,60 @@
       </div>
     </nav>
   </Header>
-  <main>
+  <br>
+  <main id="inicio-contato">
     <section>
-      <h3 id="titulo"> <strong>Fale conosco</strong></h3>
+      <div class="titulo-contato">
+        <p class="titulo-p"> <strong>Fale conosco</strong></p>
+        <br>
+        <p class="titulo-pr"> <strong>Nossas redes</strong></p>
+      </div>
       <div class="menu-rede">
-        <p class="subtitulo">Responderemos o mais breve possível.</p>
-        <h3 id="titulo">Nossas redes</h3>
-        <img src="/img/instagran.png" alt="logo do instagram">
-        <img src="/img/facebook.png" alt="logo-facebok">
-        <img src="/img/tiktok.png" alt="logo-tiktok">
-        <img src="/img/youtube.png" alt="logo-youtube">
+        <span class="subtitulo">Responderemos o mais breve possível.</span>
+        <div class="img-contato">
+          <img src="/img/instagran.png" alt="logo do instagram">
+          <img src="/img/facebook.png" alt="logo-facebok">
+          <img src="/img/tiktok.png" alt="logo-tiktok">
+          <img src="/img/youtube.png" alt="logo-youtube">
+        </div>
       </div>
       <div class="contato">
-        <p><strong>Contato:</strong>
-          Email: contato@rotadopao.com.br <br> Telefone:(81)99874-8913</p>
+        <p><strong>Contato:</strong><br /> <br />
+          Email: contato@rotadopao.com.br <br /> <br />
+          <br>
+          Telefone: (81)99874-8913
+        </p>
       </div>
     </section>
-    <form>
-      <fieldset class="grupo">
-        <div class="campo">
-          <label for="nome">Nome <b>*</b></label> <br>
-          <input type="text" name="nomePessoa" id="nomePessoa" autocomplete="on" required autofocus>
-        </div>
-        <div class="campo">
-          <label for="email">E-mail <b>*</b></label> <br>
-          <input type="email" name="email" id="email" autocomplete="on" required autofocus>
-        </div>
-        <div class="campo">
-          <label for="assunto">Assunto <b>*</b></label> <br>
-          <input type="text" name="assunto" id="assunto" autocomplete="on" required autofocus>
-        </div>
-      </fieldset>
-      <div class="campo">
-        <br>
-        <label for="comentario">Comentário ou mensagem <b>*</b></label>
-        <textarea name="comentario" id="comentario" style="width: 26em;" rows="6"></textarea>
-      </div>
-      <button class="botao" type="submit">Enviar</button>
-    </form>
+    <section class="contato-form">
+      <form action="#" method="post">
+        <fieldset>
+          <div class="container-cont">
+            <label class="campo-label" for="nome">Nome<b style="color: red;">*</b></label>
+            <input class="campo-input" type="text" id="nomePessoa" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="container-cont">
+            <label class="campo-label" for="email">E-mail<b style="color: red;">*</b></label>
+            <input class="campo-input" type="email" id="email" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="container-cont">
+            <label class="campo-label" for="assunto">Assunto<b style="color: red;">*</b></label>
+            <input class="campo-input" type="text" id="assunto" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="container-cont">
+            <label class="campo-label" for="msg">Comentário<b style="color: red;">*</b></label>
+            <textarea id="msg"> </textarea>
+          </div>
+          <button class="botao-cont" type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </section>
   </main>
   <br>
   <footer>

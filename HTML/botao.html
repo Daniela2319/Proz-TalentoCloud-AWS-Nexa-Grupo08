@@ -31,6 +31,7 @@
           <a href="/HTML/produtos.html">Produtos</a>
         </li>
       </ul>
+      <img class="menu-hamburguer" src="/img/Hamburger_icon.svg.png" alt="menu-hamburguer" width="50px">
       <!-- Botao, cesta com preço e o item -->
       <div class="img-cesta">
         <div class="btn-itens">
@@ -49,37 +50,38 @@
   </Header>
   <main>
     <section>
-
+      <h3 id="titulo">Entrar</h3>
+      <form action="Entrar">
+        <fieldset>
+          <div class="campo">
+            <label for="nome">Nome do usuário ou e-mail<b>*</b></label> <br>
+            <input type="text" type="email" name="nomeusuario" id="nomeusuario" autocomplete="on" required autofocus>
+          </div>
+          <div class="campo">
+            <label for="senha">Senha<b>*</b></label> <br>
+            <input type="password" name="senha" id="senha" autocomplete="on" required autofocus>
+          </div>
+        </fieldset>
+      </form>
+      <button type="submit">Acessar</button>
     </section>
-    <h3 id="titulo">Entrar</h3>
-    <form action="Entrar">
-      <fieldset class="grupo">
-        <div class="campo">
-          <label for="nome">Nome do usuário ou e-mail<b>*</b></label> <br>
-          <input type="text" type="email" name="nomeusuario" id="nomeusuario" autocomplete="on" required autofocus>
-        </div>
-        <div class="campo">
-          <label for="senha">Senha<b>*</b></label> <br>
-          <input type="password" name="senha" id="senha" autocomplete="on" required autofocus>
-        </div>
-      </fieldset>
-    </form>
-    <button type="submit">Acessar</button>
     <br>
-    <h3 id="titulo">Cadastre - se</h3>
-    <form action="cadastro">
-      <fieldset class="grupo">
-        <div class="campo">
-          <label for="nome">Endereço de e-mail<b>*</b></label> <br>
-          <input type="email" name="enderecoemail" id="enderecoemail" autocomplete="on" required autofocus>
-        </div>
-        <div class="campo">
-          <label for="senha">Senha<b>*</b></label> <br>
-          <input type="password" name="senha" id="senha" autocomplete="on" required autofocus>
-        </div>
-      </fieldset>
-    </form>
-    <button type="submit">Cadastre-se</button>
+    <section>
+      <h3 id="titulo">Cadastre - se</h3>
+      <form action="cadastro">
+        <fieldset class="grupo">
+          <div class="campo">
+            <label for="nome">Endereço de e-mail<b>*</b></label> <br>
+            <input type="email" name="enderecoemail" id="enderecoemail" autocomplete="on" required autofocus>
+          </div>
+          <div class="campo">
+            <label for="senha">Senha<b>*</b></label> <br>
+            <input type="password" name="senha" id="senha" autocomplete="on" required autofocus>
+          </div>
+        </fieldset>
+      </form>
+      <button type="submit">Cadastre-se</button>
+    </section>
   </main>
   <br>
   <footer id="rodape">
