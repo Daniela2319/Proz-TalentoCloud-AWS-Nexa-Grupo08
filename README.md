@@ -9,17 +9,19 @@
 
 # Sobre
 
-Esta sendo elaborado uma site de panificação e confetaria. 🚧 em andamemento 🚧. 
+Esta sendo elaborado uma site de panificação. 🚧 em andamemento 🚧. 
+
 
 
 
 <p align="center">
-  <figure>
-<img src="https://github.com/Daniela2319/Proz-TalentoCloud-AWS-Nexa-Grupo08/assets/106537496/384eb2c1-bf60-41c3-88ac-8284eb99fb4e" height="700" width="700">
-  </figure>
+ 
+<img src="https://github.com/Daniela2319/Proz-TalentoCloud-AWS-Nexa-Grupo08/assets/106537496/8ae1d286-b891-4c5f-830e-1ee7184b81cd" height="1000" width="700">
+  
   <br>
-   <figcaption align="center">Figura mostra pagina Home do site.</figcaption>
-</p>
+  </p>
+   <p align="center">Figura mostra pagina Home do site.</p>
+
 
 <br>
 
