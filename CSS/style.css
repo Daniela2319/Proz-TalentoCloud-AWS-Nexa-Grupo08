@@ -469,7 +469,7 @@ main .contato {
 .contato-form {
   padding: 30px 10px;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px;
+  /* box-shadow: 5px 5px 15px; */
   max-width: 30vw;
   margin-top: -147px;
   margin-bottom: 100px;
@@ -543,4 +543,68 @@ main .botao-cont {
 
 main .botao-cont:hover {
   opacity: 0.85;
+}
+
+/* Cadastro/Login */
+#login-cadastro {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 200px;
+  /* background-color: #cc2936; */
+}
+
+main .titulo-entra {
+  font-size: 24px;
+  font-weight: 800;
+  color: #48392a;
+  padding: 10px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+main #entrada {
+  background-color: white;
+  padding: 30px 10px;
+  border-radius: 20px;
+  /* box-shadow: 5px 5px 15px; */
+  width: 500px;
+}
+
+.grupo:nth-child(2) {
+  display: flex;
+}
+.grupo:nth-child(4) {
+  display: flex;
+}
+.grupo:nth-child(5) {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.container-cadastro .camp-input {
+  margin: 10px 2px;
+  width: 500px;
+  height: 30px;
+  border: none;
+  background-color: #eee3e3;
+  border-radius: 4px;
+  color: #48392a;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 14px;
+}
+
+.container-cadastro .camp-label {
+  font-size: 20px;
+  font-weight: 400;
+  color: #48392a;
+}
+
+#check .cam-input {
+  margin-top: 10px;
 }
