@@ -20,7 +20,7 @@ Esta sendo elaborado uma site de panificação. 🚧 em andamemento 🚧.
   
   <br>
   </p>
-   <p align="center">Figura mostra pagina Home do site.</p>
+   <p align="center">Figura-01  Página Home do site.</p>
 
 
 <br>
