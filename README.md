@@ -1,6 +1,6 @@
 <h1 align="center"> TURMA 05 -  HTML, CSS e JavaScript 💻- Grupo 08 </h1>
 
-<p align="center"> <a href="https://prozeducacao.com.br/" target="_blank">Proz-Talento Cloud</a> - <a href="https://aws.amazon.com/pt/" target="_blank">AWS</a> - <a href="https://www.nexaresources.com/" target="_blank">Nexa</a> </p>
+<p align="center"> <a href="https://prozeducacao.com.br/" target="_blank" >Proz-Talento Cloud</a> - <a href="https://aws.amazon.com/pt/" target="_blank">AWS</a> - <a href="https://www.nexaresources.com/" target="_blank">Nexa</a> </p>
 
 <p align="center">
 <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp|&nbsp;&nbsp;&nbsp;
