@@ -403,7 +403,7 @@ main .titulo-contato {
   /* word-wrap: break-word; */
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 800px) {
   main .titulo-p {
     align-items: center;
     font-size: 14px;
@@ -426,7 +426,7 @@ main .menu-rede {
   /* word-wrap: break-word; */
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 800px) {
   main .menu-rede {
     margin-left: -247px;
   }
@@ -651,4 +651,185 @@ main #entrada {
   margin-top: 10px;
   color: #eee3e3;
   transition: 0.5s;
+}
+
+/*---------------- Sobre ------------------*/
+
+article .titulo-sobre {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 20px;
+  max-width: 500px;
+}
+
+article .sobre {
+  display: flex;
+  justify-content: center;
+  margin: 93px 126px 100px 130px;
+  gap: 54px;
+}
+@media (max-width: 800px) {
+  /* main .sobre {
+    flex-direction: row;
+  } */
+  .texto {
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;
+  }
+  article .sobre-img .img-padeiro {
+    display: none;
+  }
+}
+
+article .texto .textoone {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 30px;
+  width: 300px;
+  margin-bottom: 38px;
+}
+
+article .sobre-img .img-padeiro {
+  width: 343px;
+  height: 1113px;
+}
+
+/*---------------- index ------------------*/
+section .img-banner {
+  width: 100%;
+  height: 412px;
+  border: 3px solid #cc2936;
+}
+
+section .banner-geral {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  margin: 36px 128px 36px 128px;
+}
+
+section .banner-delivery {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+section .btn-delivery a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+  height: 28px;
+  background-color: #cc2936;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fbf2c0;
+}
+
+section .banner-congelados {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+section .btn-congelados a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 304px;
+  height: 28px;
+  background-color: #cc2936;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fbf2c0;
+}
+
+section .banner-planos {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+section .btn-planos a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 28px;
+  background-color: #cc2936;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fbf2c0;
+}
+
+section .img-logo-sacola {
+  width: 139px;
+  height: 62px;
+  position: absolute;
+  top: 65%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+section .banner-rota {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbf2c0;
+  width: 100%;
+  height: 380px;
+  gap: 100px;
+}
+
+section .texto-banner {
+  font-size: 24px;
+  font-weight: 800;
+  color: #48392a;
+}
+
+section .img-logo-banner {
+  width: 486px;
+  height: 216px;
+}
+
+section .img-final {
+  width: 100%;
+  height: 465px;
+}
+
+section .banner-final {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  margin: 40px 0 60px 0;
+}
+
+section .texto-nossa a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 28px;
+  background-color: #cc2936;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fbf2c0;
 }
