@@ -697,139 +697,102 @@ article .sobre-img .img-padeiro {
 }
 
 /*---------------- index ------------------*/
-section .img-banner {
-  width: 100%;
-  height: 412px;
-  border: 3px solid #cc2936;
-}
-
-section .banner-geral {
-  display: flex;
-  justify-content: center;
-  gap: 34px;
-  margin: 36px 128px 36px 128px;
-}
-
-section .banner-delivery {
-  position: relative;
-  height: 100%;
-  text-align: center;
-}
-
-section .btn-delivery a {
+/*---------------HOME------------------*/
+/*-----------Botões -HOME -------------*/
+/* .botoes-home {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 240px;
-  height: 28px;
-  background-color: #cc2936;
-  border-radius: 20px;
-  border: none;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fbf2c0;
-}
-
-section .banner-congelados {
-  position: relative;
-  height: 100%;
-  text-align: center;
-}
-
-section .btn-congelados a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 304px;
-  height: 28px;
-  background-color: #cc2936;
-  border-radius: 20px;
-  border: none;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fbf2c0;
-}
-
-section .banner-planos {
-  position: relative;
-  height: 100%;
-  text-align: center;
-}
-
-section .btn-planos a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 280px;
-  height: 28px;
-  background-color: #cc2936;
-  border-radius: 20px;
-  border: none;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fbf2c0;
-}
-
-section .img-logo-sacola {
-  width: 139px;
-  height: 62px;
-  position: absolute;
-  top: 65%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-}
-
-section .banner-rota {
-  display: flex;
+  display: inline;
   justify-content: center;
   align-items: center;
-  background-color: #fbf2c0;
-  width: 100%;
-  height: 380px;
-  gap: 100px;
-}
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border: none;
+} */
 
-section .texto-banner {
-  font-size: 24px;
-  font-weight: 800;
-  color: #48392a;
-}
-
-section .img-logo-banner {
-  width: 486px;
-  height: 216px;
-}
-
-section .img-final {
-  width: 100%;
-  height: 465px;
-}
-
-section .banner-final {
-  position: relative;
-  height: 100%;
-  text-align: center;
-  margin: 40px 0 60px 0;
-}
-
-section .texto-nossa a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 280px;
-  height: 28px;
+.botoes-home {
+  text-decoration: none;
   background-color: #cc2936;
   border-radius: 20px;
-  border: none;
-  text-decoration: none;
   font-size: 20px;
   font-weight: 400;
   color: #fbf2c0;
+  position: absolute;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border: none;
+}
+
+/*---------- Banner 1 - HOME ------------*/
+.banner-img {
+  display: flex;
+  justify-content: center;
+  background-color: #cc2936;
+  width: 100% auto;
+  height: auto;
+  padding: 5px 5px;
+  margin: 0 auto;
+}
+
+.img-banner {
+  width: 100%;
+}
+
+/*---------- Banner 2 - HOME ------------*/
+.banner2-home {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  width: 100% auto;
+  height: 470px;
+  padding: 20px;
+}
+
+.banner2-home-elementos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+/*---------- Banner 3 - HOME ------------*/
+
+.banner-para-empresa {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  color: #48392a;
+  align-items: center;
+  background-color: #fbf2c0;
+  height: 380px;
+}
+
+.link-sua-empresa {
+  color: #cc2936;
+  margin: 10px;
+}
+
+/*---------- Banner 4 (último) - HOME ------------*/
+
+.conheca-historia {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0%;
+}
+
+#botao-conheca {
+  align-self: flex-start;
+  margin: 130px;
+}
+
+.img-final {
+  width: 100%;
+  height: 465px;
 }
