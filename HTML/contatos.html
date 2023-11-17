@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contatos</title>
   <link rel="stylesheet" href="/CSS/style.css">
+  <script src="/JavaScrip/produto.js" defer></script>
 </head>
 
 <body>
@@ -25,10 +26,10 @@
           <a href="/HTML/sobre.html">Sobre</a>
         </li>
         <li class="nav-item">
-          <a href="/HTML/contatos.html">Contatos</a>
+          <a href="/HTML/produtos.html">Produtos</a>
         </li>
         <li class="nav-item">
-          <a href="/HTML/produtos.html">Produtos</a>
+          <a href="/HTML/contatos.html">Contatos</a>
         </li>
       </ul>
       <img class="menu-hamburguer" src="/img/Hamburger_icon.svg.png" alt="menu-hamburguer" width="50px">
@@ -77,26 +78,30 @@
       <form action="#" method="post">
         <fieldset>
           <div class="container-cont">
-            <label class="campo-label" for="nome">Nome<b style="color: red;">*</b></label>
-            <input class="campo-input" type="text" id="nomePessoa" />
+            <label class="campo-label required-popup" for="username">Nome</label>
+            <input class="campo-input" type="text" id="username" />
+            <p id="username-helper" class="helper-text">Usuário inválido</p>
           </div>
         </fieldset>
         <fieldset>
           <div class="container-cont">
             <label class="campo-label" for="email">E-mail<b style="color: red;">*</b></label>
             <input class="campo-input" type="email" id="email" />
+            <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
           </div>
         </fieldset>
         <fieldset>
           <div class="container-cont">
             <label class="campo-label" for="assunto">Assunto<b style="color: red;">*</b></label>
             <input class="campo-input" type="text" id="assunto" />
+            <p id="assunto-helper" class="helper-text">Mensagem de ajuda</p>
           </div>
         </fieldset>
         <fieldset>
           <div class="container-cont">
-            <label class="campo-label" for="msg">Comentário<b style="color: red;">*</b></label>
+            <label class="campo-label" for="comentario">Comentário<b style="color: red;">*</b></label>
             <textarea id="msg"> </textarea>
+            <p id="msg-helper" class="helper-text">Mensagem de ajuda</p>
           </div>
           <button class="botao-cont" type="submit">Enviar</button>
         </fieldset>

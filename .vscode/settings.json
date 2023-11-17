@@ -1,3 +1,8 @@
 {
-    "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5502,
+  "editor.wordWrap": "on",
+  "breadcrumbs.filePath": "off",
+  "outline.icons": false,
+  "html.autoClosingTags": false,
+  "editor.formatOnSave": true
 }

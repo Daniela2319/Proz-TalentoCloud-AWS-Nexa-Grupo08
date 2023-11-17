@@ -58,6 +58,23 @@ header #nav-lista {
   margin-left: 100px;
   gap: 100px; /*medida espaço entre lista produto cabeçalho*/
 }
+
+header #nav-lista a:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+/*-----------------botão do menu----------------------*/
+header #btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  header #btn-mobile {
+    display: block;
+  }
+}
+
 @media (max-width: 915px) {
   header #nav-lista {
     display: none;
@@ -357,7 +374,6 @@ footer .rodape-01 {
     display: block;
     align-items: center;
     height: auto;
-    /* gap: 1rem; */
   }
 }
 
@@ -375,7 +391,9 @@ footer .rodape-item {
 }
 
 footer .img-rodape {
-  margin-bottom: 135px;
+  position: absolute;
+  left: 675px;
+  margin-bottom: 375px;
 }
 
 @media (max-width: 1228px) {
@@ -495,6 +513,7 @@ fieldset:nth-child(5) {
 
 .container-cont .campo-input {
   margin: 10px 10px;
+  align-items: center;
   width: calc(100% - 20px);
   height: 40px;
   background-color: #eee3e3;
@@ -503,7 +522,7 @@ fieldset:nth-child(5) {
   color: #48392a;
   font-size: 20px;
   font-weight: 400;
-  padding: 14px 10px 0 10px;
+  padding-left: 10px;
 }
 
 #msg {
@@ -543,6 +562,45 @@ main .botao-cont {
 
 main .botao-cont:hover {
   opacity: 0.85;
+}
+
+/*---------------- Estilos-Dinâmicos ------------------*/
+.required-popup::after {
+  content: "Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #dfdfdf;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+.campo-input.error {
+  border: solid 2px #cc2936;
+  background-color: #ccbbbb;
+  color: #662020;
+}
+
+.campo-input.correct {
+  background-color: #bbccbb;
+  border: #206620;
+  color: #206620;
+}
+
+/*mensagem de erro*/
+.helper-text {
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #662020;
+}
+
+.visible {
+  display: block;
+  margin-bottom: 20px;
 }
 
 /*---------------- Cadastro/Login ------------------*/
@@ -710,23 +768,51 @@ article .sobre-img .img-padeiro {
   border: none;
 } */
 
-.botoes-home {
+.banner2-home-elementos {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+.botoes-home a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border: none;
   text-decoration: none;
   background-color: #cc2936;
   border-radius: 20px;
   font-size: 20px;
   font-weight: 400;
   color: #fbf2c0;
+}
+/*-----------Botões -HOME- conheça historia -------------*/
+.conheca-historia {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+.botoes-home a {
   position: absolute;
-  display: inline;
-  justify-content: center;
-  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: auto;
   height: auto;
   padding: 10px;
   border: none;
+  text-decoration: none;
+  background-color: #cc2936;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fbf2c0;
 }
-
 /*---------- Banner 1 - HOME ------------*/
 .banner-img {
   display: flex;
@@ -789,7 +875,7 @@ article .sobre-img .img-padeiro {
 
 #botao-conheca {
   align-self: flex-start;
-  margin: 130px;
+  /* margin: 130px; */
 }
 
 .img-final {
