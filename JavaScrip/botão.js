@@ -16,12 +16,53 @@ function validarValor(input, helper) {
   });
 }
 
+function togglePopup(input, label) {
+  input.addEventListener("focus", () => {
+    label.classList.add("required-popup");
+  });
+
+  input.addEventListener("blur", () => {
+    label.classList.add("required-popup");
+  });
+}
+
+function estilizarInputCorreto(input, helper) {
+  helper.classList.remove("visible");
+  input.classList.remove("error");
+  input.classList.add("correct");
+}
+
+function estilizarInputIncorreto(input, helper) {
+  helper.classList.add("visible");
+  input.classList.add("error");
+  input.classList.remove("correct");
+}
+
+function validarSenha(input, helper) {
+  input.addEventListener("blur", (e) => {
+    let valor = e.target.value;
+    if (valor === "") {
+      helper.innerText = "O campo de senha não pode estar vazio";
+      estilizarInputIncorreto(input, helper);
+    } else {
+      estilizarInputCorreto(input, helper);
+    }
+  });
+}
+
 // --------------------------------VALIDAÇÃO USERNAME ------------------------------------- //
 let usernameInput = document.getElementById("username");
+let usernameInputCadastro = document.getElementById("usernameCadastro");
 let usernameHelper = document.getElementById("username-helper");
+let usernameHelperCadastro = document.getElementById(
+  "username-helper-cadastro"
+);
 let usernameLabel = document.querySelector('label[for="username"]');
 
+togglePopup(usernameInput, usernameLabel);
+
 validarValor(usernameInput, usernameHelper);
+validarValor(usernameInputCadastro, usernameHelperCadastro);
 
 //------------------------VALIDAÇÃO EMAIL -------------------//
 
@@ -45,16 +86,11 @@ emailInput.addEventListener("change", (e) => {
   }
 });
 
-//------------------------VALIDAÇÃO ASSUNTO -------------------//
-let assunto = document.getElementById("assunto");
-let assuntoHelper = document.getElementById("assunto-helper");
+//------------------------VALIDAÇÃO SENHA -------------------//
+let senhaInput = document.getElementById("passwordone");
+let senhaCadastroInput = document.getElementById("password");
+let senhaHelper = document.getElementById("senha-helper");
+let senhaHelperCadastro = document.getElementById("username-helper-cadastro");
 
-validarValor(assunto, assuntoHelper);
-
-//------------------------VALIDAÇÃO COMÉNTARIO-------------------//
-let comentario = document.getElementById("msg");
-let comentarioHelper = document.getElementById("msg-helper");
-
-validarValor(comentario, comentarioHelper);
-
-//------------------------VALIDAÇÃO -------------------//
+validarSenha(senhaInput, senhaHelper);
+validarSenha(senhaCadastroInput, senhaHelperCadastro);

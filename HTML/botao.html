@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login/Cadastre-se</title>
   <link rel="stylesheet" href="/CSS/style.css">
+  <script src="/JavaScrip/botão.js" defer></script>
 </head>
 
 <body>
@@ -51,22 +52,29 @@
   <main id="login-cadastro">
     <section id="entrada">
       <h3 class="titulo-entra">Login</h3>
-      <form action="Entrar">
+      <form>
+        <fieldset class="grupo">
+
+          <div class="container-cadastro">
+            <label class="camp-label" for="username">Nome ou E-mail</label>
+            <input class="camp-input" type="text" id="username" />
+            <p id="username-helper" class="helper-text">Usuário inválido</p>
+          </div>
+
+        </fieldset>
+
         <fieldset class="grupo">
           <div class="container-cadastro">
-            <label class="camp-label" for="nome">Nome ou E-mail<b style="color: red;">*</b></label>
-            <input class="camp-input" type="text" id="nomePessoa" />
+            <label class="camp-label" for="senha">Senha</label> <br>
+            <input class="camp-input" type="password" name="senha" id="passwordone" autocomplete="on" required
+              autofocus>
+            <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
           </div>
         </fieldset>
-        <fieldset class="grupo">
-          <div class="container-cadastro">
-            <label class="camp-label" for="senha">Senha<b style="color: red;">*</b></label> <br>
-            <input class="camp-input" type="password" name="senha" id="senha" autocomplete="on" required autofocus>
-          </div>
-        </fieldset>
+
         <fieldset class="grupo">
           <div id="check">
-            <input class="cam-input" type="checkbox" required name="checkbox">
+            <input class="camp-input" type="checkbox" required name="checkbox">
             <label class="camp-label">Esqueci a senha</label>
           </div>
         </fieldset>
@@ -74,31 +82,38 @@
       <br>
       <button class="botao-cont" type="submit">Acessar</button>
     </section>
+    <!-- formulario de cadastro -->
     <section id="entrada">
       <h3 class="titulo-entra">Cadastre - se</h3>
-      <form action="cadastro">
+      <form>
         <fieldset class="grupo">
-          <div class="container-cadastro">
-            <label class="camp-label" for="text">Nome e Sobrenome<b style="color: red;">*</b></label>
-            <input class="camp-input" type="text" id="nome" />
+          <div class="container-cadastro ">
+            <label class="camp-label" for="username">Nome e Sobrenome</label>
+            <input class="camp-input" type="text" id="usernameCadastro" />
+            <p id="username-helper-cadastro" class="helper-text">Usuário inválido</p>
           </div>
         </fieldset>
         <fieldset class="grupo">
           <div class="container-cadastro">
-            <label class="camp-label" for="email">E-mail<b style="color: red;">*</b></label>
+            <label class="camp-label" for="email">E-mail</label>
             <input class="camp-input" type="email" id="email" />
+            <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
           </div>
         </fieldset>
+
         <fieldset class="grupo">
           <div class="container-cadastro">
             <label class="camp-label" for="senha">Senha<b style="color: red;">*</b></label> <br>
-            <input class="camp-input" type="password" name="senha" id="senha" autocomplete="on" required autofocus>
+            <input class="camp-input" type="password" name="senha" id="password" autocomplete="on" required autofocus>
+            <p id="senha-helper-cadastro" class="helper-text">Mensagem de ajuda</p>
           </div>
         </fieldset>
         <fieldset class="grupo">
           <div class="container-cadastro">
             <label class="camp-label" for="senha">Repita a Senha<b style="color: red;">*</b></label> <br>
-            <input class="camp-input" type="password" name="senha" id="senha" autocomplete="on" required autofocus>
+            <input class="camp-input" type="password" name="senha" id="passwordtwo" autocomplete="on" required
+              autofocus>
+            <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
           </div>
         </fieldset>
         <br>

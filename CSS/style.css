@@ -574,7 +574,7 @@ main .botao-cont:hover {
   font-size: 0.65rem;
   padding: 0.2rem 0.3rem;
   width: auto;
-  display: block;
+  display: inline-block;
   background-color: #202020;
 }
 
@@ -584,9 +584,21 @@ main .botao-cont:hover {
   color: #662020;
 }
 
+input.camp-input.error {
+  border: solid 2px #cc2936;
+  background-color: #ccbbbb;
+  color: #662020;
+}
+
 .campo-input.correct {
   background-color: #bbccbb;
-  border: #206620;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+input.camp-input.correct {
+  background-color: #bbccbb;
+  border: solid 2px #206620;
   color: #206620;
 }
 
@@ -679,7 +691,7 @@ main #entrada {
 .container-cadastro .camp-input {
   margin: 10px 2px;
   width: 500px;
-  height: 30px;
+  height: 40px;
   border: none;
   background-color: #eee3e3;
   border-radius: 4px;
