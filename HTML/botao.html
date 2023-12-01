@@ -56,16 +56,16 @@
         <fieldset class="grupo">
 
           <div class="container-cadastro">
-            <label class="camp-label" for="username">Nome ou E-mail</label>
-            <input class="camp-input" type="text" id="username" />
-            <p id="username-helper" class="helper-text">Usuário inválido</p>
+            <label class="camp-label" for="email">E-mail<b style="color: red;">*</b></label>
+            <input class="camp-input" type="email" id="email-inicial" />
+            <p id="email-helper-inicial" class="helper-text">Usuário inválido</p>
           </div>
 
         </fieldset>
 
         <fieldset class="grupo">
           <div class="container-cadastro">
-            <label class="camp-label" for="senha">Senha</label> <br>
+            <label class="camp-label" for="senha">Senha<b style="color: red;">*</b></label> <br>
             <input class="camp-input" type="password" name="senha" id="passwordone" autocomplete="on" required
               autofocus>
             <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
@@ -80,7 +80,7 @@
         </fieldset>
       </form>
       <br>
-      <button class="botao-cont" type="submit">Acessar</button>
+      <button id="btn-acessar" class="botao-cont" type="submit">Acessar</button>
     </section>
     <!-- formulario de cadastro -->
     <section id="entrada">
@@ -88,14 +88,14 @@
       <form>
         <fieldset class="grupo">
           <div class="container-cadastro ">
-            <label class="camp-label" for="username">Nome e Sobrenome</label>
+            <label class="camp-label" for="username">Nome e Sobrenome<b style="color: red;">*</b></label>
             <input class="camp-input" type="text" id="usernameCadastro" />
             <p id="username-helper-cadastro" class="helper-text">Usuário inválido</p>
           </div>
         </fieldset>
         <fieldset class="grupo">
           <div class="container-cadastro">
-            <label class="camp-label" for="email">E-mail</label>
+            <label class="camp-label" for="email">E-mail<b style="color: red;">*</b></label>
             <input class="camp-input" type="email" id="email" />
             <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
           </div>
@@ -110,14 +110,14 @@
         </fieldset>
         <fieldset class="grupo">
           <div class="container-cadastro">
-            <label class="camp-label" for="senha">Repita a Senha<b style="color: red;">*</b></label> <br>
+            <label class="camp-label" for="senha">Confirma a Senha<b style="color: red;">*</b></label> <br>
             <input class="camp-input" type="password" name="senha" id="passwordtwo" autocomplete="on" required
               autofocus>
-            <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
+            <p id="senha-helper-confirma" class="helper-text">Mensagem de ajuda</p>
           </div>
         </fieldset>
         <br>
-        <button class="botao-cont" type="submit">Enviar</button>
+        <button id="btn-enviar" class="botao-cont" type="submit">Enviar</button>
       </form>
     </section>
   </main>

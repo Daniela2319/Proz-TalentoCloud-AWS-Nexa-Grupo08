@@ -565,18 +565,6 @@ main .botao-cont:hover {
 }
 
 /*---------------- Estilos-Dinâmicos ------------------*/
-.required-popup::after {
-  content: "Campo obrigatório";
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #dfdfdf;
-  font-size: 0.65rem;
-  padding: 0.2rem 0.3rem;
-  width: auto;
-  display: inline-block;
-  background-color: #202020;
-}
 
 .campo-input.error {
   border: solid 2px #cc2936;
@@ -589,7 +577,11 @@ input.camp-input.error {
   background-color: #ccbbbb;
   color: #662020;
 }
-
+.mensagem.error {
+  border: solid 2px #cc2936;
+  background-color: #ccbbbb;
+  color: #662020;
+}
 .campo-input.correct {
   background-color: #bbccbb;
   border: solid 2px #206620;
@@ -597,6 +589,12 @@ input.camp-input.error {
 }
 
 input.camp-input.correct {
+  background-color: #bbccbb;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.mensagem.correct {
   background-color: #bbccbb;
   border: solid 2px #206620;
   color: #206620;

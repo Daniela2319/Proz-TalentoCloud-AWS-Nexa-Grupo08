@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contatos</title>
   <link rel="stylesheet" href="/CSS/style.css">
-  <script src="/JavaScrip/produto.js" defer></script>
+  <script src="/JavaScrip/contato.js" defer></script>
 </head>
 
 <body>
@@ -75,10 +75,10 @@
       </div>
     </section>
     <section class="contato-form">
-      <form action="#" method="post">
+      <form>
         <fieldset>
           <div class="container-cont">
-            <label class="campo-label" for="username">Nome</label>
+            <label class="campo-label" for="username">Nome<b style="color: red;">*</b></label>
             <input class="campo-input" type="text" id="username" />
             <p id="username-helper" class="helper-text">Usuário inválido</p>
           </div>
@@ -100,10 +100,10 @@
         <fieldset>
           <div class="container-cont">
             <label class="campo-label" for="comentario">Comentário<b style="color: red;">*</b></label>
-            <textarea id="msg"> </textarea>
+            <textarea id="msg" class="mensagem" required> </textarea>
             <p id="msg-helper" class="helper-text">Mensagem de ajuda</p>
           </div>
-          <button class="botao-cont" type="submit">Enviar</button>
+          <button id="btn-contato" class="botao-cont" type="submit">Enviar</button>
         </fieldset>
       </form>
     </section>
