@@ -46,8 +46,8 @@
         </div>
         <div class="itens">
           <div class="precoEitem">
-            <span><b>R$ 0,00</b> <br /></span>
-            <span>0 itens</span>
+            <p class="valor">R$ <span id="valor-subtotal"> 0,00</span></p>
+            <p class="qtd-0"><span id="quantidade-subtotal">0</span> Itens</p>
           </div>
           <img src="/img/cesta de compra.png" alt="cesta de compras">
         </div>
@@ -95,31 +95,35 @@
     <section id="Pão Delivery">
       <h1 class="titulo-pao-delivery">Pães Delivery</h1>
       <div class="banner-delivery-produto">
-        <div class="container">
+        <div class="container" data-produto-id="01">
           <img src="/img/Produto-pães/pão-frances.png" alt="pão-frances" class="img-produto">
           <p class="produto-pao">Pão Francês</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="qtd-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
-        <div class="container">
+        <div class="container" data-produto-id="02">
           <img src="/img/Produto-pães/pão-doce (1).png" alt="pão-doce" class="img-produto">
           <p class="produto-pao">Pão Doce Tradicional</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-02" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="qtd-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>1,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos-02" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-02" class="btn-adicionar">+</button>
+          </div>
         </div>
         <br>
         <div class="container">
@@ -127,13 +131,15 @@
           <p class="produto-pao">Pão Integral Tradicional</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-03" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="qtd-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,99</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos-03" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-03" class="btn-adicionar">+</button>
+          </div>
         </div>
         <br>
         <div class="container">
@@ -141,13 +147,15 @@
           <p class="produto-pao">Pão Italiano</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-04" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="qtd-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>7,50</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos-04" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-04" class="btn-adicionar">+</button>
+          </div>
         </div>
       </div>
       <!-- delivery-banner-produto 02 -->
@@ -157,55 +165,69 @@
           <p class="produto-pao">Baquette Tradicional</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
+
+
         <br>
         <div class="container">
           <img src="/img/Produto-pães/pao-australiano.png" alt="pão-australiano" class="img-produto">
           <p class="produto-pao">Pão Australiano</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
+
         <br>
         <div class="container">
           <img src="/img/Produto-pães/croasaint 1.png" alt="croissant" class="img-produto">
           <p class="produto-pao">Croissant</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
         <br>
+
         <div class="container">
           <img src="/img/Produto-pães/pao-queijo.png" alt="pão-queijo" class="img-produto">
           <p class="produto-pao">Pão de Queijo</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
       </div>
       </div>
@@ -216,27 +238,34 @@
           <p class="produto-pao">Brioche</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
+
         <br>
         <div class="container">
           <img src="/img/Produto-pães/pão-cacau.png" alt="pão-cacau" class="img-produto">
           <p class="produto-pao">Pão de Cacau</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
         <br>
         <div class="container">
@@ -244,13 +273,16 @@
           <p class="produto-pao">Pão de Caixa Tradicional</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
         <br>
         <div class="container">
@@ -258,13 +290,16 @@
           <p class="produto-pao">Pão de Caixa Integral</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
       </div>
     </section>
@@ -278,52 +313,63 @@
           <p class="produto-pao">Pão de Queijo</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
         <div class="container">
           <img src="/img/Produto-congelado/congelado croassait 1.png" alt="congelado-croissant" class="img-produto">
           <p class="produto-pao">Croissant</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
         <div class="container">
           <img src="/img/Produto-congelado/congelado francês 1.png" alt="congelado-frances" class="img-produto">
           <p class="produto-pao">Pão Francês</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
         <div class="container">
           <img src="/img/Produto-congelado/congelado integral 1.png" alt="congelado-integral" class="img-produto">
           <p class="produto-pao">Pão Integral</p>
           <div class="quantidade">
             <p class="qtd-produto">
-              <label class="qtd-produto" for="qtd-produto">--</label>
-              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto" placeholder="1 item" min="1"
-                max="30" step="1" value="0" required>
+              <input class="qtd-produto" type="number" name="qtd-produto" id="qtd-produto-01" min="1" max="30" step="1"
+                value="0" required>
             </p>
-            <p class="preco-produto">R$ 0,00</p>
+            <p class="qtd-produto">R$ <span>2,10</span> </p>
           </div>
-          <button class="btn-adicionar">Adicionar</button>
+          <div class="btn-adicionar-01">
+            <button id="btn-produtoMenos" class="btn-produto-01" for="qtd-produto">-</button>
+            <button id="btn-adicionar-produto-01" class="btn-adicionar">+</button>
+          </div>
         </div>
       </div>
     </section>

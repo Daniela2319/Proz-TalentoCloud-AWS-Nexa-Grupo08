@@ -144,7 +144,7 @@ header .precoEitem {
   flex-direction: column;
 }
 
-header span {
+header {
   color: #cc2936;
   font-size: 20px;
   font-weight: 400;
@@ -318,16 +318,33 @@ main .quantidade {
   margin-top: 15px;
 }
 
-main #qtd-produto {
-  font-size: 24px;
+main .qtd-produto {
+  width: 70px;
+  font-size: 20px;
   font-weight: 800;
   color: #cc2936;
-  border: 1px #cc2936 solid;
+}
+
+.btn-adicionar-01 {
+  display: flex;
+  gap: 10px;
 }
 
 main .btn-adicionar {
-  width: 143px;
-  height: 48px;
+  width: 60px;
+  height: 30px;
+  background-color: #cc2936;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fbf2c0;
+  margin: 15px 0 30px 0;
+}
+
+.btn-produto-01 {
+  width: 60px;
+  height: 30px;
   background-color: #cc2936;
   border-radius: 20px;
   border: none;

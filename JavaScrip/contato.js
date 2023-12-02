@@ -61,23 +61,21 @@ let assuntoHelper = document.getElementById("assunto-helper");
 validarValor(assunto, assuntoHelper);
 
 //------------------------VALIDAÇÃO COMÉNTARIO-------------------//
-let comentario = document.getElementById("msg");
+let comentarioTextarea = document.getElementById("msg");
 let comentarioHelper = document.getElementById("msg-helper");
 
-vigiaTextarea();
-
-comentario.addEventListener("change", (e) => {
+comentarioTextarea.addEventListener("input", (e) => {
   let valor = e.target.value;
 
   if (valor.length < 10) {
-    comentario.classList.add("error");
+    comentarioTextarea.classList.add("error");
     comentarioHelper.classList.add("visible");
     comentarioHelper.innerText =
       "Digite um texto válido com pelo menos 10 caracteres.";
   } else {
-    comentario.classList.remove("error");
+    comentarioTextarea.classList.remove("error");
     comentarioHelper.classList.remove("visible");
-    comentario.classList.add("correct");
+    comentarioTextarea.classList.add("correct");
   }
 });
 
@@ -102,18 +100,3 @@ btnContato.addEventListener("click", (e) => {
     alert("Contato enviado com sucesso!");
   }
 });
-
-function vigiaTextarea() {
-  limite = 50;
-  myTextArea = document.forms[0].comentarios;
-  myTextField = document.forms[0].contagem;
-
-  if (myTextArea.value.length > limite) {
-    myTextArea.value = myTextArea.value.substr(
-      0,
-      myTextArea.value.length - (myTextArea.value.length - limite)
-    );
-  } else {
-    myTextField.value = limite - myTextArea.value.length;
-  }
-}
