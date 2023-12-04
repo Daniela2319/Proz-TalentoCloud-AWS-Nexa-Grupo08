@@ -820,8 +820,10 @@ article .sobre-img .img-padeiro {
 /*-----------Botões -HOME- conheça historia -------------*/
 .conheca-historia {
   position: relative;
-  height: 100%;
+  height: 50%;
   text-align: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .botoes-home a {
@@ -870,6 +872,9 @@ article .sobre-img .img-padeiro {
   align-items: center;
   justify-content: center;
   margin: 15px;
+  gap: 30px;
+  transition: transform 0.6s ease-in-out;
+  transform: translateX(0);
 }
 
 /*---------- Banner 3 - HOME ------------*/
@@ -908,4 +913,17 @@ article .sobre-img .img-padeiro {
 .img-final {
   width: 100%;
   height: 465px;
+}
+
+#carrossel {
+  box-shadow: 2px 2px 4px black;
+  overflow: hidden;
+  height: 432px;
+  width: 100% auto;
+}
+
+.banner-pae .img-congelados .img-plano {
+  object-fit: cover;
+  height: 470px;
+  width: 100% auto;
 }
