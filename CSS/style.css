@@ -409,7 +409,7 @@ footer .rodape-item {
 
 footer .img-rodape {
   position: absolute;
-  left: 675px;
+  left: 853px;
   margin-bottom: 375px;
 }
 
@@ -873,8 +873,6 @@ article .sobre-img .img-padeiro {
   justify-content: center;
   margin: 15px;
   gap: 30px;
-  transition: transform 0.6s ease-in-out;
-  transform: translateX(0);
 }
 
 /*---------- Banner 3 - HOME ------------*/
@@ -900,7 +898,7 @@ article .sobre-img .img-padeiro {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 2000px;
   height: auto;
   margin: 0%;
 }
@@ -913,17 +911,4 @@ article .sobre-img .img-padeiro {
 .img-final {
   width: 100%;
   height: 465px;
-}
-
-#carrossel {
-  box-shadow: 2px 2px 4px black;
-  overflow: hidden;
-  height: 432px;
-  width: 100% auto;
-}
-
-.banner-pae .img-congelados .img-plano {
-  object-fit: cover;
-  height: 470px;
-  width: 100% auto;
 }
