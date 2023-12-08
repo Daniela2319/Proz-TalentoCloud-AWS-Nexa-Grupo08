@@ -28,9 +28,10 @@
     </div>
     <div class="cart--item">
       <img src="" alt="">
-      <div class="cart--item---qtarea">
+      <div class="cart--item-nome"></div>
+      <div class="cart--item--qtarea">
         <button class="cart--item-qtmenos">-</button>
-        <div class="cart--item-qt">1</div>
+        <div class="cart--item--qt">1</div>
         <button class="cart--item-qtmais">+</button>
       </div>
     </div>
@@ -42,13 +43,44 @@
     </div>
   </header>
   <main>
-    <h1>Modelos</h1>
+    <!-- Cabeçalho-texto -->
+    <div class="cabecalho">
+      <p class="cabecalho-texto">Receba pães no conforto da sua casa. Assine já o plano de recebimento de pães!</p>
+    </div>
+    <!-- Lista-menu -->
+    <nav class="cabecalho-menu">
+      <img class="img-logo" src="/img/logo retangular (cabeçalho).png" alt="logo-essencia caseira">
+      <ul id="nav-lista">
+        <button id="btn-mobile">Menu</button>
+        <li class="nav-item">
+          <a href="/HTML/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/HTML/sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a href="/HTML/produtos.html">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a href="/HTML/contatos.html">Contatos</a>
+        </li>
+      </ul>
+      <!-- Botao, cesta com preço e o item -->
+      <div class="img-cesta">
+        <div class="btn-itens">
+          <button class="btn-item"><a href="/HTML/botao.html">
+              Login | Cadastre-se</a></button>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <h1>Produtos</h1>
     <div class="models-area"></div>
   </main>
   <aside>
     <div class="cart--area">
       <div class="menu-closer">
-        <span class="material-icons">close</span>
+        <span class="material-icons">x</span>
       </div>
       <h1>Seus Modelos</h1>
       <div class="cart"></div>
@@ -59,6 +91,10 @@
         </div>
         <div class="cart--totalitem desconto">
           <span>Desconto (-10%)</span>
+          <span>R$ --</span>
+        </div>
+        <div class="cart--totalitem total big">
+          <span>Total</span>
           <span>R$ --</span>
         </div>
         <div class="cart--finalizar">Finalizar a Compra</div>
@@ -75,13 +111,13 @@
         <h1>--</h1>
         <div class="modelsInfo--desc">--</div>
         <div class="modelsInfo--sizearea">
-          <div class="modelsInfo--sector">Escala</div>
+          <div class="modelsInfo--sector">g | kg</div>
           <div class="modelsInfo--sizes">
-            <div data-key="0" class="modelsInfo--size selected">1/72 <span>--</span>
+            <div data-key="0" class="modelsInfo--size selected">100g <span>--</span>
             </div>
-            <div data-key="1" class="modelsInfo--size">1/48 <span>--</span>
+            <div data-key="1" class="modelsInfo--size">400g <span>--</span>
             </div>
-            <div data-key="2" class="modelsInfo--size">1/32 <span>--</span>
+            <div data-key="2" class="modelsInfo--size">1kg <span>--</span>
             </div>
           </div>
         </div>
