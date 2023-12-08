@@ -143,4 +143,13 @@ let modelsJson = [
     description:
       "A base deste pão é uma mistura equilibrada de farinhas integrais, que não apenas acrescenta uma profundidade de sabor nutrido, mas também oferece uma carga vital de fibras essenciais.",
   },
+  {
+    id: 17,
+    name: "Quero Pão na Semana",
+    img: "/img/entregador_mini_banner_3.png",
+    price: [60.0, 120.0, 180.0, 300.0],
+    sizes: ["1x semana", "2x semana", "3x semana", "5x semana"],
+    description:
+      "Escolha a opção de entrega que melhor atenda às suas necessidades: Faça o pagamento correspondente ao plano escolhido, Confirme seu endereço de entrega para garantir uma entrega eficiente. Pagamento Único: O valor deve ser pago antecipadamente no início de cada semana. Cancelamento: Você pode cancelar ou alterar seu plano a qualquer momento antes do início da próxima semana.",
+  },
 ];

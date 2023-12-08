@@ -2,130 +2,6 @@
   box-sizing: border-box;
 }
 
-.cabecalho {
-  background-color: #cc2936;
-  max-width: 100%;
-  height: 52px;
-}
-
-@media (max-width: 800px) {
-  .cabecalho {
-    min-width: 200px;
-  }
-}
-
-.cabecalho .cabecalho-texto {
-  color: #fbf2c0;
-  font-size: 20px;
-  font-weight: 400;
-  word-wrap: break-word;
-  text-align: center;
-  padding: 16px 0 16px 0;
-}
-
-@media (max-width: 900px) {
-  .cabecalho .cabecalho-texto {
-    font-size: 12px;
-  }
-  .img-logo {
-    width: 200px;
-  }
-}
-
-/*-----------------Cabeçalho do menu----------------------*/
-.cabecalho-menu {
-  max-width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  gap: 30px;
-}
-
-#nav-lista {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin-left: 100px;
-  gap: 100px; /*medida espaço entre lista produto cabeçalho*/
-}
-
-#nav-lista a:hover {
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 2px;
-}
-
-/*-----------------botão do menu----------------------*/
-#btn-mobile {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  #btn-mobile {
-    display: block;
-  }
-}
-
-@media (max-width: 915px) {
-  #nav-lista {
-    display: none;
-  }
-}
-
-#nav-lista .nav-item a {
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 400;
-  color: #48392a;
-}
-
-.btn-itens {
-  margin-left: 20px;
-}
-
-.btn-item {
-  width: 280px;
-  height: 36px;
-  background-color: #cc2936;
-  border-radius: 20px;
-  border: none;
-  font-size: 20px;
-  font-weight: 400;
-  margin-left: 63px;
-}
-
-.btn-item a {
-  color: #fbf2c0;
-  text-decoration: none;
-}
-
-.img-cesta {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 60px;
-  padding: auto;
-  gap: 10px;
-}
-
-@media (max-width: 900px) {
-  .img-cesta {
-    display: none;
-  }
-}
-
-.itens {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 10px;
-}
-
-.precoEitem {
-  flex-direction: column;
-}
-
 body {
   background-color: white;
   font-family: "Roboto", sans-serif;
@@ -173,7 +49,7 @@ header {
 }
 
 aside {
-  background-color: white;
+  background-color: #fbf2c0;
   width: 0vw;
   font-size: "Roboto", sans-serif;
   transition: all ease 0.2s;
@@ -200,6 +76,10 @@ h1 {
 .models-area {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.img-logo {
+  margin-bottom: 10px;
 }
 
 .models-item {
@@ -240,7 +120,7 @@ h1 {
   font-size: 22px;
   border-radius: 20px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
   transition: all ease 0.2s;
 }
 
@@ -530,6 +410,10 @@ h1 {
     max-width: 100%;
   }
 
+  .models-item--img {
+    margin-top: 20px;
+  }
+
   header {
     display: flex;
   }
@@ -609,5 +493,8 @@ h1 {
   }
   .modelsInfo--cancelMobileButton {
     display: block;
+  }
+  .img-logo {
+    display: none;
   }
 }

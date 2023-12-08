@@ -331,20 +331,8 @@ main .qtd-produto {
 }
 
 main .btn-adicionar {
-  width: 60px;
-  height: 30px;
-  background-color: #cc2936;
-  border-radius: 20px;
-  border: none;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fbf2c0;
-  margin: 15px 0 30px 0;
-}
-
-.btn-produto-01 {
-  width: 60px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   background-color: #cc2936;
   border-radius: 20px;
   border: none;

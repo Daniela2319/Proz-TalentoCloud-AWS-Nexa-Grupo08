@@ -124,7 +124,7 @@ function updateCart() {
     c("aside").classList.add("show");
     c(".cart").innerHTML = "";
     let subtotal = 0;
-    let desconto = 0;
+    let frete = 0;
     let total = 0;
     cart.map((itemCart, index) => {
       let modelsItem = modelsJson.find((itemBD) => itemBD.id == itemCart.id);
@@ -167,10 +167,10 @@ function updateCart() {
 
       c(".cart").append(cartItem);
     });
-    desconto = subtotal * 0.1;
-    total = subtotal - desconto;
+    frete = subtotal * 0.8;
+    total = subtotal + frete;
     c(".subtotal span:last-child").innerHTML = `R$ ${subtotal.toFixed(2)}`;
-    c(".desconto span:last-child").innerHTML = `R$ ${desconto.toFixed(2)}`;
+    c(".desconto span:last-child").innerHTML = `R$ ${frete.toFixed(2)}`;
     c(".total span:last-child").innerHTML = `R$ ${total.toFixed(2)}`;
   } else {
     c("aside").classList.remove("show");
