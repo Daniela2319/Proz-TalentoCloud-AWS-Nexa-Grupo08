@@ -27,6 +27,17 @@ header {
   align-items: center;
 }
 
+.img-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
 .menu-openner {
   margin-right: 15px;
   font-size: 26px;
