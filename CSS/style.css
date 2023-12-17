@@ -118,6 +118,10 @@ header .btn-item a {
   text-decoration: none;
 }
 
+.btn-item:hover {
+  background-color: #48392a;
+}
+
 header .img-cesta {
   display: flex;
   justify-content: flex-start;
@@ -397,7 +401,7 @@ footer .rodape-item {
 
 footer .img-rodape {
   position: absolute;
-  left: 853px;
+  left: 950px;
   margin-bottom: 375px;
 }
 
@@ -830,6 +834,12 @@ article .sobre-img .img-padeiro {
   font-weight: 400;
   color: #fbf2c0;
 }
+.botoes-home a:hover {
+  color: #cc2936;
+  background-color: #fbf2c0;
+  text-decoration: none;
+  font-weight: 500;
+}
 /*---------- Banner 1 - HOME ------------*/
 .banner-img {
   display: flex;
@@ -886,7 +896,7 @@ article .sobre-img .img-padeiro {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 2000px;
+  width: 100vw;
   height: auto;
   margin: 0%;
 }
@@ -897,6 +907,6 @@ article .sobre-img .img-padeiro {
 }
 
 .img-final {
-  width: 100%;
+  width: 100vw;
   height: 465px;
 }
