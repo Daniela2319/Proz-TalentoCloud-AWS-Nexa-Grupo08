@@ -9,12 +9,14 @@
 
 # Sobre
 
-Esta sendo elaborado uma site de panificação. 🚧 em andamemento 🚧. 
+O que é a Rota do Pão?
 
-
-
+* A rota do pão é um sistema de e-comerce baseando no modelo de conveniência ou recorrência.
+* Esse modelo de assinatura cobra seus clientes com recorrência por soluções que podem facilitar
+a vida deles, reduzindo suas preocupações e melhorando a rotina. Isso se efetiva a oferecer produtos e/ou serviços de que eles precisam todos os meses.
 
 <p align="center">
+
  
 <img src="https://github.com/Daniela2319/Proz-TalentoCloud-AWS-Nexa-Grupo08/assets/106537496/8ae1d286-b891-4c5f-830e-1ee7184b81cd" height="1000" width="700">
   
@@ -32,6 +34,7 @@ Esse projeto foi desenvolvindo com as seguintes tecnologias:
 - IDE VisualStudio Code
 - HTML
 - CSS
+- JavaScript
 - Git e Github
 
 # Autores
